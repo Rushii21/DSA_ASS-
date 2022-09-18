@@ -1,20 +1,27 @@
 def accept_data(cricket,badminton,football):
-    c1=int(input("Enter the no of students who play Cricket "))
-    b1=int(input("Enter the no of students who paly Badminton "))
-    f1=int(input("Enter the no of students who play Football "))
+    c1=int(input("Enter the no of students for Cricket "))
+    b1=int(input("Enter the no of students for Badminton "))
+    f1=int(input("Enter the no of students for Football "))
 
-    print("The no students play Cricket =",c1)
-    print("The no students play Badminton =",b1)
-    print("The no students play Football =",f1)
+    print("The no students for Cricket =",c1)
+    print("The no students for Badminton =",b1)
+    print("The no students for Football =",f1)
 
     for i in range(c1):
-        cricket.add(input("Name of students who play cricket "))
+        name=input("Enter name for cricket ")
+        cricket.add(name)
 
     for i in range(b1):
-        badminton.add(input("Name of students who play badminton "))
+        name=input("Enter name for badminton ")
+        badminton.add(name)
 
     for i in range(f1):
-        football.add(input("Name of student who play Football "))
+        name=input("Enter name for Football ")
+        football.add(name)
+
+    print("Name of the students for Cricket ",cricket)
+    print("Name of the students for Badminton ",badminton)
+    print("Name of the students for Football ",football)
 
 def cricket_and_badminton(cricket,badminton):
     play=set()
